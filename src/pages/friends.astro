@@ -117,62 +117,81 @@ const description =
           )
         }
         {
-          items.map((item) => (
-            <a
-              href={item.siteurl}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-tags={item.tags?.join(",")}
-              class="friend-card group flex items-center gap-3 p-2.5 rounded-xl border border-(--line-divider) hover:border-(--primary) hover:bg-(--card-bg) transition-all duration-300 hover:shadow-lg relative overflow-hidden"
-            >
-              {/* 背景装饰 - 仅悬停显示 */}
-              <div class="absolute inset-0 bg-(--primary) opacity-0 group-hover:opacity-5 transition-opacity duration-300 pointer-events-none" />
+          items.map((item) => {
+            const hasLink =
+              Boolean(item.siteurl) &&
+              item.siteurl !== "#" &&
+              !item.siteurl.startsWith("javascript");
+            const Tag = hasLink ? "a" : "div";
+            return (
+              <Tag
+                href={hasLink ? item.siteurl : undefined}
+                target={hasLink ? "_blank" : undefined}
+                rel={hasLink ? "noopener noreferrer" : undefined}
+                data-tags={item.tags?.join(",")}
+                class={`friend-card group flex items-center gap-3 p-2.5 rounded-xl border border-(--line-divider) ${
+                  hasLink
+                    ? "hover:border-(--primary) hover:bg-(--card-bg) cursor-pointer"
+                    : ""
+                } transition-all duration-300 hover:shadow-lg relative overflow-hidden`}
+              >
+                {/* 背景装饰 - 仅悬停显示 */}
+                {hasLink && (
+                  <div class="absolute inset-0 bg-(--primary) opacity-0 group-hover:opacity-5 transition-opacity duration-300 pointer-events-none" />
+                )}
 
-              {/* 外部链接图标 - 固定在卡片右上角 */}
-              <Icon
-                name="material-symbols:arrow-outward-rounded"
-                class="absolute top-3 right-3 text-(--primary) text-lg opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
-              />
+                {/* 外部链接图标 - 固定在卡片右上角 */}
+                {hasLink && (
+                  <Icon
+                    name="material-symbols:arrow-outward-rounded"
+                    class="absolute top-3 right-3 text-(--primary) text-lg opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
+                  />
+                )}
 
-              {/* 头像 */}
-              <div class="relative w-16 h-16 shrink-0 rounded-xl overflow-hidden bg-zinc-100 dark:bg-zinc-800 border border-black/5 dark:border-white/5 group-hover:scale-105 transition-transform duration-300">
-                <img
-                  src={item.imgurl}
-                  alt={item.title}
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                  referrerpolicy="no-referrer"
-                />
-              </div>
-
-              {/* 内容 */}
-              <div class="grow min-w-0 flex flex-col justify-center gap-0.5">
-                <div class="font-bold text-base text-neutral-900 dark:text-neutral-100 group-hover:text-(--primary) transition-colors truncate pr-4">
-                  {item.title}
+                {/* 头像 */}
+                <div class="relative w-16 h-16 shrink-0 rounded-xl overflow-hidden bg-zinc-100 dark:bg-zinc-800 border border-black/5 dark:border-white/5 group-hover:scale-105 transition-transform duration-300">
+                  <img
+                    src={item.imgurl}
+                    alt={item.title}
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                    referrerpolicy="no-referrer"
+                  />
                 </div>
 
-                <div
-                  class="text-sm text-neutral-500 dark:text-neutral-400 line-clamp-1"
-                  title={item.desc}
-                >
-                  {item.desc}
-                </div>
+                {/* 内容 */}
+                <div class="grow min-w-0 flex flex-col justify-center gap-0.5">
+                  <div
+                    class={`font-bold text-base text-neutral-900 dark:text-neutral-100 ${
+                      hasLink ? "group-hover:text-(--primary)" : ""
+                    } transition-colors truncate pr-4`}
+                  >
+                    {item.title}
+                  </div>
 
-                {/* 标签 */}
-                <div class="flex flex-wrap gap-1 mt-1">
-                  {item.tags && item.tags.length > 0
-                    ? item.tags
-                        .slice(0, 3)
-                        .map((tag) => (
-                          <span class="text-[0.65rem] px-1.5 py-0.5 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-500 dark:text-neutral-400 transition-colors duration-300">
-                            {tag}
-                          </span>
-                        ))
-                    : null}
+                  {item.desc && (
+                    <div
+                      class="text-sm text-neutral-500 dark:text-neutral-400 line-clamp-1"
+                      title={item.desc}
+                    >
+                      {item.desc}
+                    </div>
+                  )}
+
+                  {/* 标签 */}
+                  {item.tags && item.tags.length > 0 && (
+                    <div class="flex flex-wrap gap-1 mt-1">
+                      {item.tags.slice(0, 3).map((tag) => (
+                        <span class="text-[0.65rem] px-1.5 py-0.5 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-500 dark:text-neutral-400 transition-colors duration-300">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
-              </div>
-            </a>
-          ))
+              </Tag>
+            );
+          })
         }
       </div>
 
