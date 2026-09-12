@@ -53,6 +53,27 @@
     padding: 0 1rem;
     gap: 0.5rem;
     font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+@media (max-width: 639px) {
+    .banner-links {
+        gap: 0.28rem;
+    }
+
+    .banner-link {
+        width: 2rem;
+        height: 2rem;
+        flex-shrink: 0;
+    }
+
+    .banner-link-text {
+        width: auto !important;
+        height: 2rem;
+        padding: 0 0.45rem;
+        gap: 0.25rem;
+        font-size: 0.75rem;
+    }
 }
 
 /* banner 首页标题下有链接时，主内容容器会拦截点击；让容器不拦截、网格内容恢复可交互。
