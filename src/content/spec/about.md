@@ -1,27 +1,34 @@
 # 关于我 / About Me
 
-你好！我是 **夏叶** ，一个在数字世界中默默无闻的一片叶子。
-
-## 🛠️ 关于本站
-
-这个网站使用 **Astro** 框架构建，采用了 [Firefly](https://github.com/CuteLeaf/Firefly) 模板，Firefly 是基于 [Fuwari](https://github.com/saicaca/fuwari) 的二次开发。
-
-**Firefly** 是一款基于 Astro 框架和 Fuwari 模板开发的清新美观且现代化个人博客主题模板，专为技术爱好者和内容创作者设计。该主题融合了现代 Web 技术栈，提供了丰富的功能模块和高度可定制的界面，让您能够轻松打造出专业且美观的个人博客网站。
-
-
-**🖥️在线预览： [Firefly - Demo site](https://firefly.cuteleaf.cn/)**
-
-**📝Firefly使用文档： [https://docs-firefly.cuteleaf.cn](https://docs-firefly.cuteleaf.cn/)**
-
-**⭐Firefly开源地址：[https://github.com/CuteLeaf/Firefly](https://github.com/CuteLeaf/Firefly)** 
-
-**⭐Fuwari开源地址：[https://github.com/saicaca/fuwari](https://github.com/saicaca/fuwari)**
-
-::github{repo="CuteLeaf/Firefly"}
-
-::github{repo="saicaca/fuwari"}
+你好！我是 **安稳Antwen**（AKa: Dinghy_421），一个热衷于探索洛圣都与各种游戏世界的 GTA 玩家与技术折腾者。
 
 ---
 
-*感谢你的来访！希望在这里能找到对你有用的内容！*
+## 🎮 找到我 / Gaming IDs
+
+| 平台 / 社区 | 账号 / 标识 | 说明 |
+| :--- | :--- | :--- |
+| **PSN** | `Dinghy_421`、`Friday_421`、`Howlett421`、`SaoPauloCarlos` | PlayStation 主机联机 |
+| **Rockstar Games** | `DINGHY-421` | R星官方社群 |
+| **Steam** | `离开LA的最后一架直升机` | PC 游戏联机 |
+| **Xbox** | `DINGHY39` | 微软 Xbox 平台 |
+| **QQ群【洛城风云】** | [点击加入群聊（1031417305）](https://qm.qq.com/q/QX3sEc8Ngu) | GTA 玩家与车友技术交流群 |
+
+---
+
+## 🔗 旗下站点与项目
+
+- **个人博客**：[https://blog.antwen.cn](https://blog.antwen.cn)
+- **GTA 游戏数据库**：[https://www.antwen.cn](https://www.antwen.cn)
+- **资源分享站**：[https://share.antwen.cn](https://share.antwen.cn)
+- **GitHub**：[https://github.com/dinghy421](https://github.com/dinghy421)
+- **Bilibili**：[https://space.bilibili.com/513000931](https://space.bilibili.com/513000931)
+
+---
+
+## 🛠️ 关于本站
+
+本博客使用 [Astro](https://astro.build/) 框架，基于清新美观的 [Firefly](https://github.com/CuteLeaf/Firefly) 主题模板构建，评论系统采用 [Twikoo](https://twikoo.js.org/)。
+
+感谢你的来访！欢迎随时在留言板或评论区交流互动！
 

@@ -98,28 +98,34 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 
 	// 自定义导航栏链接
 	links.push({
-		name: "链接",
+		name: "站点导航",
 		url: "#",
 		icon: "material-symbols:link",
 		// 子菜单
 		children: [
 			{
+				name: "GTA游戏数据库",
+				url: "https://www.antwen.cn",
+				external: true,
+				icon: "material-symbols:database",
+			},
+			{
+				name: "洛城风云QQ群",
+				url: "https://qm.qq.com/q/QX3sEc8Ngu",
+				external: true,
+				icon: "material-symbols:group",
+			},
+			{
+				name: "资源分享站",
+				url: "https://share.antwen.cn",
+				external: true,
+				icon: "material-symbols:share",
+			},
+			{
 				name: "GitHub",
-				url: "https://github.com/CuteLeaf/Firefly",
+				url: "https://github.com/dinghy421",
 				external: true,
 				icon: "fa7-brands:github",
-			},
-			{
-				name: "Gitee",
-				url: "https://gitee.com/CuteLeaf/Firefly",
-				external: true,
-				icon: "fa7-brands:gitee",
-			},
-			{
-				name: "Firefly文档",
-				url: "https://docs-firefly.cuteleaf.cn",
-				external: true,
-				icon: "material-symbols:docs",
 			},
 		],
 	});

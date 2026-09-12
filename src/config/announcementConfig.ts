@@ -5,7 +5,8 @@ export const announcementConfig: AnnouncementConfig = {
 	title: "",
 
 	// 公告内容
-	content: "欢迎来到我的博客！这是一则示例公告。",
+	content:
+		"欢迎来到安稳Antwen的个人博客！这里记录了GTA5/6车辆信息、使用手册与各种游戏与技术折腾记录。",
 
 	// 是否允许用户关闭公告
 	closable: true,
