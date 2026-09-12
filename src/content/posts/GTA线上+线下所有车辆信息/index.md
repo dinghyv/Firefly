@@ -10,7 +10,7 @@ image: "./featured.jpg"
 
 # GTA线上+线下所有车辆信息（截至破坏行动探员 v1.70）
 
-在原版的基础上添加了isPurchaseable以及Imgurl可以获取车辆是否可以从游戏内网站直接购买和车辆图片（来自Rockstar官网），如需请前往我的云盘中下载：[洛城风云分享](https://share.antwen.cn/%E5%85%AC%E5%BC%80%E6%96%87%E4%BB%B6/release/%E5%85%A8%E8%BD%A6%E8%BE%86%E4%BF%A1%E6%81%AF)
+在原版的基础上添加了isPurchaseable以及Imgurl可以获取车辆是否可以从游戏内网站直接购买和车辆图片（来自Rockstar官网），如需可加入QQ群【洛城风云】交流获取（原分享盘已废弃，可前往[服务状态](https://status.antwen.cn/)查看服务可用性）。
 
 以下为示例：
 

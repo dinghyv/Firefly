@@ -116,10 +116,16 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 				icon: "material-symbols:group",
 			},
 			{
-				name: "资源分享站",
-				url: "https://share.antwen.cn",
+				name: "服务状态",
+				url: "https://status.antwen.cn/",
 				external: true,
-				icon: "material-symbols:share",
+				icon: "material-symbols:monitor-heart-outline",
+			},
+			{
+				name: "赞助支持",
+				url: "https://www.antwen.cn/sponsor",
+				external: true,
+				icon: "material-symbols:favorite",
 			},
 			{
 				name: "GitHub",
@@ -237,9 +243,10 @@ export const LinkPresets: Record<string, NavBarLink> = {
 		pageKey: "mal",
 	},
 	Sponsor: {
-		name: "打赏",
-		url: "/sponsor/",
+		name: "赞助支持",
+		url: "https://www.antwen.cn/sponsor",
 		icon: "material-symbols:favorite",
+		external: true,
 		pageKey: "sponsor",
 	},
 	About: {

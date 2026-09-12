@@ -452,14 +452,14 @@ const seriesData = await getSeriesPosts(entry);
                         <h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-1">
                           {
                             sponsorConfig.showButtonInPost && siteConfig.pages.sponsor
-                              ? i18n(I18nKey.sponsorButton)
+                              ? "赞助支持与分享"
                               : i18n(I18nKey.shareOnSocial)
                           }
                         </h3>
                         <p class="text-sm text-neutral-600 dark:text-neutral-400">
                           {
                             sponsorConfig.showButtonInPost && siteConfig.pages.sponsor
-                              ? i18n(I18nKey.sponsorButtonText)
+                              ? "如果这篇文章或网站对你有帮助，欢迎分享给更多人或赞助支持！"
                               : i18n(I18nKey.shareOnSocialDescription)
                           }
                         </p>
@@ -486,10 +486,12 @@ const seriesData = await getSeriesPosts(entry);
                       {
                         showSponsorButton && (
                           <a
-                            href={url("/sponsor/")}
+                            href="https://www.antwen.cn/sponsor"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             class="inline-flex items-center gap-2 px-6 py-3 bg-(--primary) text-white dark:text-black/70 rounded-lg font-medium hover:bg-(--primary)/80 hover:scale-105 active:scale-95 transition-all whitespace-nowrap"
                           >
-                            <span>{i18n(I18nKey.sponsor)}</span>
+                            <span>赞助支持</span>
                             <Icon name="fa7-solid:arrow-right" class="text-sm" />
                           </a>
                         )
@@ -542,14 +544,14 @@ const seriesData = await getSeriesPosts(entry);
                         <h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-1">
                           {
                             sponsorConfig.showButtonInPost && siteConfig.pages.sponsor
-                              ? i18n(I18nKey.sponsorButton)
+                              ? "赞助支持与分享"
                               : i18n(I18nKey.shareOnSocial)
                           }
                         </h3>
                         <p class="text-sm text-neutral-600 dark:text-neutral-400">
                           {
                             sponsorConfig.showButtonInPost && siteConfig.pages.sponsor
-                              ? i18n(I18nKey.sponsorButtonText)
+                              ? "如果这篇文章或网站对你有帮助，欢迎分享给更多人或赞助支持！"
                               : i18n(I18nKey.shareOnSocialDescription)
                           }
                         </p>
@@ -576,10 +578,12 @@ const seriesData = await getSeriesPosts(entry);
                       {
                         showSponsorButton && (
                           <a
-                            href={url("/sponsor/")}
+                            href="https://www.antwen.cn/sponsor"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             class="inline-flex items-center gap-2 px-6 py-3 bg-(--primary) text-white dark:text-black/70 rounded-lg font-medium hover:bg-(--primary)/80 hover:scale-105 active:scale-95 transition-all whitespace-nowrap"
                           >
-                            <span>{i18n(I18nKey.sponsor)}</span>
+                            <span>赞助支持</span>
                             <Icon name="fa7-solid:arrow-right" class="text-sm" />
                           </a>
                         )
