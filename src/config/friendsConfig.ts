@@ -23,31 +23,84 @@ export const friendsPageConfig: FriendsPageConfig = {
 // 友链配置
 export const friendsConfig: FriendLink[] = [
 	{
-		title: "夏夜流萤",
+		title: "热爱音乐的Richard",
 		imgurl:
-			"https://weavatar.com/avatar/d252655d40d6874417a720bad0a6c5f77f8f6a1fd2f882f8f338402dc37e4190?s=640",
-		desc: "飞萤之火自无梦的长夜亮起，绽放在终竟的明天。",
-		siteurl: "https://blog.cuteleaf.cn",
-		tags: ["Blog"],
-		weight: 10, // 权重，数字越大排序越靠前
-		enabled: true, // 是否启用
+			"https://i0.hdslb.com/bfs/face/ee8abcb65cac96c1fd7d4f31edbf205b11401fb6.jpg",
+		desc: "小辣椒儿",
+		siteurl: "https://space.bilibili.com/22040586",
+		weight: 10,
+		enabled: true,
 	},
 	{
-		title: "Firefly Docs",
-		imgurl: "https://docs-firefly.cuteleaf.cn/logo.png",
-		desc: "Firefly主题模板文档",
-		siteurl: "https://docs-firefly.cuteleaf.cn",
-		tags: ["Docs"],
+		title: "SchPK",
+		imgurl:
+			"https://i1.hdslb.com/bfs/face/019c71dfd62b70198f87ccaba4212661711f712a.jpg",
+		desc: "关注我，我服装转移超强的",
+		siteurl: "https://space.bilibili.com/1029700594",
 		weight: 9,
 		enabled: true,
 	},
 	{
-		title: "Astro",
-		imgurl: "https://avatars.githubusercontent.com/u/44914786?v=4&s=640",
-		desc: "The web framework for content-driven websites. ⭐️ Star to support our work!",
-		siteurl: "https://github.com/withastro/astro",
-		tags: ["Framework"],
+		title: "Spirit_LJX",
+		imgurl:
+			"https://i0.hdslb.com/bfs/face/fbd598f9ac63fef448a5cadff27b13e16cf2b075.jpg",
+		desc: "我超懒的好不好",
+		siteurl: "https://space.bilibili.com/510186915",
 		weight: 8,
+		enabled: true,
+	},
+	{
+		title: "小哑巴爱玩游戏",
+		imgurl:
+			"https://i2.hdslb.com/bfs/face/ac46d67a76ac3bb0421dac09a0fc7d568119e035.jpg",
+		desc: "GTA战地记者！游戏全资讯！",
+		siteurl: "https://space.bilibili.com/3546694847302433",
+		weight: 7,
+		enabled: true,
+	},
+	{
+		title: "MC",
+		imgurl:
+			"https://i2.hdslb.com/bfs/face/88bb49e89e5d8526328fd9a9e49020374cb001d0.jpg",
+		desc: "哔哩哔哩 UP 主",
+		siteurl: "https://space.bilibili.com/1263874079",
+		weight: 6,
+		enabled: true,
+	},
+	{
+		title: "红纫",
+		imgurl:
+			"https://i0.hdslb.com/bfs/face/fb5e2692b425fdbeeeaa5e0e85375bb62cbf6ae2.jpg",
+		desc: "你也别打听我是谁",
+		siteurl: "https://space.bilibili.com/3546977115573183",
+		weight: 5,
+		enabled: true,
+	},
+	{
+		title: "Remain122",
+		imgurl:
+			"https://i1.hdslb.com/bfs/face/9611500ae4492a6b425b001a3207cca7f3fc81b9.jpg",
+		desc: "为众人抱薪者, 不可使其冻毙于风雪。",
+		siteurl: "https://space.bilibili.com/8514841",
+		weight: 4,
+		enabled: true,
+	},
+	{
+		title: "上厕所要带纸",
+		imgurl:
+			"https://i0.hdslb.com/bfs/face/62aaf8a1ba32cfaea144d9c678840c3b6c4b3b2c.jpg",
+		desc: "右键单击此处可下载图片。为了帮助保护您的隐私，bilibili 禁止自动从 Internet 下载此图片。",
+		siteurl: "https://space.bilibili.com/11825838",
+		weight: 3,
+		enabled: true,
+	},
+	{
+		title: "易富焙",
+		imgurl:
+			"https://i0.hdslb.com/bfs/face/f5a700db03a8fb6c20f930613165524f13fb0bc2.jpg",
+		desc: "去干饭的路上，风都是甜的。",
+		siteurl: "https://space.bilibili.com/556757577",
+		weight: 2,
 		enabled: true,
 	},
 ];
