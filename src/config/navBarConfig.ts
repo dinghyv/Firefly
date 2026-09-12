@@ -110,6 +110,12 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 				icon: "material-symbols:database",
 			},
 			{
+				name: "安稳工具箱",
+				url: "https://tool.antwen.cn",
+				external: true,
+				icon: "material-symbols:home-repair-service-outline",
+			},
+			{
 				name: "洛城风云QQ群",
 				url: "https://qm.qq.com/q/QX3sEc8Ngu",
 				external: true,

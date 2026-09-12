@@ -1,9 +1,9 @@
 ---
 title: "常用SQL/Linux语句"
-published: 2025-09-06
+published: 2024-09-06
 draft: false
 description: "常用SQL/Linux语句"
-tags: ["ZF", "实施"]
+tags: ["ZFTAL", "SQL"]
 category: "技术"
 image: "./featured.png"
 ---

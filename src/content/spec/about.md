@@ -20,6 +20,7 @@
 
 - **个人博客**：[https://blog.antwen.cn](https://blog.antwen.cn)
 - **GTA 游戏数据库**：[https://www.antwen.cn](https://www.antwen.cn)
+- **安稳工具箱**：[https://tool.antwen.cn](https://tool.antwen.cn/)
 - **服务状态**：[https://status.antwen.cn](https://status.antwen.cn/)
 - **赞助支持**：[https://www.antwen.cn/sponsor](https://www.antwen.cn/sponsor)
 - **GitHub**：[https://github.com/dinghy421](https://github.com/dinghy421)
